@@ -1,0 +1,156 @@
+#EJERCICIO1#
+
+use La_Tienda_de_informatica
+db.dropDatabase("Fabricantes")
+db.dropDatabase("Articulos")
+
+db.Fabricantes.insert({
+  Codigo: '101'
+  Nombre: 'Alfonso' 
+})
+
+db.Articulos.insert({
+  Codigo: '101'
+  Nombre: 'Alfonso'
+  Precio: 100,
+  Fabricante: "Lucelux"  
+})
+
+#EJERCICIO2#
+
+use Empleados
+db.dropDatabase("Empleados")
+db.dropDatabase("Departamento")
+
+db.Empleados.insert({
+  DNI: '73595833L',
+  Nombre: 'Alfonso',
+  Apellidos : 'Lara_Barbera',
+  Departamento: 'Informatica'
+})
+
+db.Departamento.insert({
+  Codigo: '101',
+  Nombre: 'Alfonso',
+  Presupuesto: 100
+})
+
+#EJERCICIO3#
+
+use Almacenes
+
+db.dropDatabase("Almacenes")
+db.dropDatabase("Cajas")
+
+db.Almacenes.insert({
+  Codigo: 101,
+  Lugar: 'Valencia',
+  Capacidad : 100
+})
+  db.Cajas.insert({
+  NumReferencia: 102,
+  Contenido: 'Alfonso',
+  Valor : 100,
+  Almacen: 'Valencia'
+})
+  #EJERCICIO4#
+
+  use Películas_y_Salas
+
+  db.dropDatabase("Salas")
+  db.dropDatabase("Peliculas")
+
+db.Salas.insert({
+  Codigo: 101,
+  Nombre: 'Yelmo_cines',
+  Pelicula : 'Venom'
+}) 
+db.Peliculas.insert({
+  Codigo: 101,
+  Nombre: 'Venom',
+  CalificaciónEdad : 18
+})
+
+#EJERCICIO5# 
+
+use Los_Directores
+
+db.dropDatabase("Directores")
+db.dropDatabase("Despachos")
+
+db.Directores.insert({
+  DNI: '73595833L',
+  NombreApels: 'Alfonso',
+  DNIJefe : 'Pedro',
+  Despacho : 102
+})
+db.Despachos.insert({
+  Numero: 102,
+  Capacidad: 2
+})
+
+#EJERCICIO6# 
+
+use Piezas_Proveedores
+
+db.dropDatabase("Piezas")
+db.dropDatabase("Suministra")
+db.dropDatabase("Proveedores")
+
+db.Piezas.insert({
+  Codigo: 101,
+  Nombre: 'rosca'
+})
+
+db.Suministra.insert({
+  CodigoPieza: 101,
+  idproveedor: 102,
+  Precio: 100
+})
+
+db.Proveedores.insert({
+  id: 102,
+  Nombre: 'rocasSL'
+})
+
+#EJERCICIO7#
+
+use Las_Grandes_Alamacenes
+
+db.dropDatabase("Cajeros")
+db.dropDatabase("Productos")
+db.dropDatabase("Venta")
+db.dropDatabase("Maquinas_registradoras")
+
+db.Cajeros.insert({
+  Codigo: 101,
+  NomApels: 'Alfonso'
+})
+
+db.Productos.insert({
+  Codigo: 101,
+  Nombre: 'piña_colada',
+  Precio: 1,80
+})
+
+db.Venta.insert({
+  Cajero: 101 ,
+  Maquina: 'Forza300',
+  Producto: 'piña_colada'
+})
+
+db.Maquinas_registradoras.insert({
+  Cajero: 101 ,
+  Piso: 2
+})
+
+#EJERCICIO8#
+
+use Los_investigadores
+
+db.dropDatabase("Facultad")
+db.dropDatabase("Investigadores")
+db.dropDatabase("Reserva")
+db.dropDatabase("Equipos")
+
+
